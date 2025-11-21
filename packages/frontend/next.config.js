@@ -2,7 +2,7 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
-const BrotliPlugin = require('brotli-webpack-plugin');
+//const BrotliPlugin = require('brotli-webpack-plugin');
 
 const nextConfig = {
   reactStrictMode: true,
@@ -55,16 +55,16 @@ const nextConfig = {
     };
 
     // ✅ Add Brotli compression only for client builds
-    if (!isServer) {
-      config.plugins.push(
-        new BrotliPlugin({
-          asset: '[path].br[query]',
-          test: /\.(js|css|html|svg)$/,
-          threshold: 10240,
-          minRatio: 0.8,
-        })
-      );
-    }
+    // if (!isServer) {
+//   config.plugins.push(
+//     new BrotliPlugin({
+//       asset: '[path].br[query]',
+//       test: /\.(js|css|html|svg)$/,
+//       threshold: 10240,
+//       minRatio: 0.8,
+//     })
+//   );
+// }
 
     return config;
   },
