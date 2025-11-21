@@ -1,0 +1,44 @@
+# ============================
+# Next.js (Frontend)
+# ============================
+packages/frontend/.next/
+packages/frontend/out/
+packages/frontend/.vercel/
+
+# ============================
+# Backend
+# ============================
+packages/backend/logs/
+packages/backend/dist/
+
+# ============================
+# Redis dump
+# ============================
+Redis/dump.rdb
+
+# ============================
+# Node Modules
+# ============================
+node_modules/
+*/node_modules/
+
+# ============================
+# Env Files
+# ============================
+*.env
+*.env.local
+*.env.development
+*.env.production
+
+# ============================
+# OS / IDE Files
+# ============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ============================
+# Misc
+# ============================
+.next/
